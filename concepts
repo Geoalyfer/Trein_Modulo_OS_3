@@ -1,0 +1,68 @@
+Módulo OS (Operational System)
+
+- O módulo `os` fornece diversas funções e métodos para interagirmos com o Sistema Operacional.
+- Com ele podemos manipular pastas e arquivos
+- É nativo da linguagem Python
+
+import os
+
+Verificar pasta atual de trabalho
+
+Método `getcwd()`
+c:\Users\Desktop\Python\Exercicios\vscode\material_modulo10\modulo10_arquivos\modulo_os
+
+Listar arquivos e pastas
+
+Método `listdir()`
+
+os.listdir()
+  ['comando_os.py',
+ 'modulo_os.ipynb',
+ 'organizador.ipynb',
+ 'organizador.py',
+ 'pasta10']
+
+Path
+
+Métodos `join()` e `basename()`
+
+os.path.join(os.getcwd(), "texto2.txt")
+'c:\\Users\\Desktop\\Python\\Exercicios\\vscode\\material_modulo10\\modulo10_arquivos\\modulo_os\\texto2.txt'
+
+Verificar se é arquivo ou se é pasta
+
+Métodos `isfile()` e `isdir()`
+False
+
+os.path.isdir(os.path.join(os.getcwd(), "pasta01"))
+False
+
+Verificar se é arquivo ou se é pasta
+Métodos `isfile()` e `isdir()`
+
+Alterar o diretório padrão
+Método `chdir()`
+
+os.getcwd()
+'c:\\Users\\Python\\Exercicios\\vscode\\material_modulo10\\modulo10_arquivos\\modulo_os'
+
+os.chdir(r'c:\Users\vinil\Downloads\modulo10_arquivos')
+['arquivos_csv_json.ipynb',
+ 'dados.csv',
+ 'dados.json',
+ 'dados.txt',
+ 'dados_json_em_csv.csv',
+ 'escrevendo_arquivos.ipynb',
+ 'lendo_arquivos.ipynb',
+ 'modulo_os',
+ 'nomes.txt']
+
+Criar e deletar pastas
+Métodos `mkdir()` e `rmdir()`
+
+os.mkdir("pasta02")
+os.rmdir("pasta02")
+
+
+
+  
